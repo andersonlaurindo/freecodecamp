@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FreeCodeCamp - Technical Documentation</title>
+    <link rel="stylesheet" href="css/technicaldocumentation.css">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <nav id="navbar">
+            <input type="checkbox" id="menu">
+            <header>
+                <h1>SQL</h1> <label for="menu" onclick id="menu-lbl"><img src="https://i.ibb.co/XpYhKhB/menu.png"
+                        alt=""></label>
+            </header>
+            <div id="nav-links">
+                <ul>
+                    <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+                    <li>
+                        <a class="nav-link" href="#What_is_sql?">What is SQL?</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#What_can_sql_do?">What Can SQL do?</a>
+                    </li>
+                    <li><a class="nav-link" href="#SQL_is_not_only_a_standard">SQL is not only a Standard</a></li>
+                    <li><a class="nav-link" href="#Using_SQL_in_your_web_site">Using SQL in Your Web Site</a></li>
+                    <li>
+                        <a class="nav-link" href="#RDBMS">RDBMS</a>
+                    </li>
+                    <li><a class="nav-link" href="#Example">Example</a></li>
+                    <li><a class="nav-link" href="#Important_sql_commands">Important SQL Commands</a></li>
+                    <li><a class="nav-link" href="#Details">Details</a></li>
+                    <li><a class="nav-link" href="#Reference">Reference</a></li>
+
+                </ul>
+            </div>
+        </nav>
+        <main id="main-doc">
+            <section class="main-section" id="Introduction">
+                <header>
+                    <h2>Introduction</h2>
+                </header>
+                <article>
+                    <p>
+                        SQL is a standard language for accessing and manipulating databases.
+                    </p>
+                </article>
+            </section>
+            <section class="main-section" id="What_is_sql?">
+                <header>
+                    <h2>What is SQL?</h2>
+                </header>
+                <article>
+                    <ul>
+                        <li>SQL stands for Structured Query Language</li>
+                        <li>SQL lets you access and manipulate databases</li>
+                        <li>SQL became a standard of the American National Standards Institute (ANSI) in 1986, and of
+                            the International Organization for Standardization (ISO) in 1987</li>
+                    </ul>
+                </article>
+            </section>
+            <section class="main-section" id="What_can_sql_do?">
+                <header>
+                    <h2>What Can SQL do?</h2>
+                </header>
+                <article>
+                    <p>SQL can execute queries against a database, retrieve data from a database, insert records in a
+                        database, update records in a database, delete records from a database, create new databases,
+                        create new tables in a database, create stored procedures in a database, create views in a
+                        database, can set permissions on tables, procedures, and views.
+                    </p>
+                </article>
+            </section>
+            <section class="main-section" id="SQL_is_not_only_a_standard">
+                <header>
+                    <h2>SQL is not only a Standard</h2>
+                </header>
+                <article>
+                    <p>Although SQL is an ANSI/ISO standard, there are different versions of the SQL language.</p>
+                    <p>However, to be compliant with the ANSI standard, they all support at least the major commands
+                        (such as SELECT, UPDATE, DELETE, INSERT, WHERE) in a similar manner.</p>
+                </article>
+            </section>
+            <section class="main-section" id="Using_SQL_in_your_web_site">
+                <header>
+                    <h2>Using SQL in Your Web Site</h2>
+                </header>
+                <p>To build a web site that shows data from a database, you will need: An RDBMS database program (i.e.
+                    MS Access, SQL Server, MySQL), a server-side scripting language, like PHP or ASP, SQL to get the
+                    data you want and HTML / CSS to style the page.</p>
+            </section>
+            <section class="main-section" id="RDBMS">
+                <header>
+                    <h2>RDBMS</h2>
+                </header>
+                <article>
+                    <p>RDBMS stands for Relational Database Management System</p>
+                </article>
+            </section>
+            <section class="main-section" id="Example">
+                <header>
+                    <h2>Example</h2>
+                </header>
+                <article>
+                    <code>SELECT column1, column2, ...
+            FROM table_name;</code></br>
+                    <code>UPDATE table_name
+            SET column1 = value1, column2 = value2, ...
+            WHERE condition;</code></br>
+                    <code>DELETE FROM table_name WHERE condition;</code></br>
+                    <code>CREATE TABLE table_name (
+            column1 datatype,
+            column2 datatype,
+            column3 datatype,
+            ....
+            );</code></br>
+                    <code>CREATE TABLE table_name (
+            column1 datatype,
+            column2 datatype,
+            column3 datatype,
+            ....
+            );</code>
+                </article>
+            </section>
+            <section class="main-section" id="Important_sql_commands">
+                <header>
+                    <h2>Important SQL Commands</h2>
+                </header>
+                <article>
+                    <ul>
+                        <li>SELECT - extracts data from a database</li>
+                        <li>UPDATE - updates data in a database</li>
+                        <li>DELETE - deletes data from a database</li>
+                        <li>INSERT INTO - inserts new data into a database</li>
+                        <li>CREATE DATABASE - creates a new database</li>
+                        <li>ALTER DATABASE - modifies a database</li>
+                        <li>CREATE TABLE - creates a new table</li>
+                        <li>ALTER TABLE - modifies a table</li>
+                        <li>DROP TABLE - deletes a table</li>
+                        <li>CREATE INDEX - creates an index (search key)</li>
+                        <li>DROP INDEX - deletes an index</li>
+                    </ul>
+                </article>
+            </section>
+            <section class="main-section" id="Details">
+                <header>
+                    <h2>Details</h2>
+                </header>
+                <article>
+                    <p>A table is a collection of related data entries and it consists of columns and rows. Every table
+                        is broken up into smaller entities called fields. The fields in the Customers table consist of
+                        CustomerID, CustomerName, ContactName, Address, City, PostalCode and Country. A field is a
+                        column in a table that is designed to maintain specific information about every record in the
+                        table.</p>
+                    </p>A record, also called a row, is each individual entry that exists in a table. For example, there
+                    are 91 records in the above Customers table. A record is a horizontal entity in a table.</p>
+                    <p>A column is a vertical entity in a table that contains all information associated with a specific
+                        field in a table.</p>
+
+                </article>
+            </section>
+            <section class="main-section" id="Reference">
+                <header>
+                    <h2>Reference</h2>
+                </header>
+                <article>
+                    <ul>
+                        <li>
+                            All the documentation in this page is taken from
+                            <a href="https://www.w3schools.com/sql" target="_blank">WESchools</a>
+                        </li>
+                    </ul>
+                </article>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
